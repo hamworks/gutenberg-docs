@@ -1,0 +1,67 @@
+version: "3"
+services:
+  nginx:
+    shm_size: 128mb
+    image: nginx
+    depends_on:
+      - wordpress
+    ports:
+      - ${WP_PORT}:80
+    volumes:
+      - wordpress:/var/www/html
+      - ./:/var/www/html/wp-content/themes/${WP_THEME}
+      - ./tools/local-env/nginx.conf:/etc/nginx/conf.d/default.conf
+
+  #
+  # WordPress
+  #
+  wordpress:
+    shm_size: 128mb
+    image: wordpress:fpm-alpine
+    depends_on:
+      - mysql
+    environment:
+      WORDPRESS_DB_HOST: "mysql:3306"
+      WORDPRESS_DB_NAME: "wordpress"
+      WORDPRESS_DB_USER: "wordpress"
+      WORDPRESS_DB_PASSWORD: "wordpress"
+    volumes:
+      - wordpress:/var/www/html
+      - ./tools/local-env/php-config.ini:/usr/local/etc/php/conf.d/php-config.ini
+      - ./:/var/www/html/wp-content/themes/${WP_THEME}
+
+  mysql:
+    shm_size: 128mb
+    image: mysql:5.7
+    environment:
+      MYSQL_RANDOM_ROOT_PASSWORD: "yes"
+      MYSQL_DATABASE: "wordpress"
+      MYSQL_USER: "wordpress"
+      MYSQL_PASSWORD: "wordpress"
+    volumes:
+      - mysql:/var/lib/mysql
+
+  cli:
+    image: wordpress:cli
+    volumes:
+      - wordpress:/var/www/html
+      - ./:/var/www/html/wp-content/themes/${WP_THEME}
+
+  installer:
+    shm_size: 256mb
+    image: wordpress:cli
+    depends_on:
+      - mysql
+      - wordpress
+    volumes:
+      - wordpress:/var/www/html
+      - ./:/var/www/html/wp-content/themes/${WP_THEME}
+      - ./:/app
+    command: >
+      bash /app/tools/wait-for.sh mysql:3306 -t 120 -- bash /app/tools/install.sh ${WP_PORT}
+
+volumes:
+  wordpress:
+    driver: local
+  mysql:
+    driver: local
