@@ -18,3 +18,17 @@ textarea {
 	color: var(--text-color);
 	font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', sans-serif;
 }
+
+img {
+	vertical-align: bottom;
+}
+
+figure, p {
+	margin-top: var(--contents-element-margin);
+	margin-bottom: var(--contents-element-margin);
+}
+
+figure {
+	margin-left: 0;
+	margin-right: 0;
+}
