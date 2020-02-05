@@ -1,0 +1,12 @@
+.wp-block-image .alignleft {
+	margin-right: var(--contents-element-margin);
+}
+
+.wp-block-image .alignright {
+	margin-left: var(--contents-element-margin);
+}
+
+.wp-block-image figcaption {
+	margin-bottom: 0;
+	font-size: var(--font-size-small);
+}
