@@ -4,14 +4,17 @@
 @custom-media --window-full (min-width: 1200px);
 
 :root {
-	--main-color: #2eb2ed;
-	--light-gray: #f5f5f5;
-	--white: #fff;
-	--black: #555;
+	--primary-color: #012C2F;
+	--secondary-color: #111;
+	--text-color: #000;
+	--white: #FFF;
 
-	--gray-border: #e7e7e7;
+	--font-size-default: 18px;
+	--font-size-small: 14px;
 
-	--padding: 15px;
-	--max-width: 970px;
+	--contents-full-width: 1210px;
+	--contents-block-margin: 60px;
+	--contents-side-margin: 20px;
+	--contents-element-margin: 20px;
 }
 
