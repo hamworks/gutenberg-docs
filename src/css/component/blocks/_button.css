@@ -3,6 +3,11 @@
 	background: var(--primary-color);
 	padding: calc( var(--contents-element-margin) / 1.5 ) var(--contents-element-margin);
 	padding-right: calc(var(--contents-element-margin) * 2.5);
+	transition: opacity var(--hover-transition-time);
+}
+
+.wp-block-button__link:hover {
+	opacity: var(--hover-opacity);
 }
 
 .is-style-outline .wp-block-button__link {
