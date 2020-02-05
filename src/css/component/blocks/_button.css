@@ -1,0 +1,26 @@
+.wp-block-button__link {
+	position: relative;
+	background: var(--primary-color);
+	padding: calc( var(--contents-element-margin) / 1.5 ) var(--contents-element-margin);
+	padding-right: calc(var(--contents-element-margin) * 2.5);
+}
+
+.is-style-outline .wp-block-button__link {
+	background: transparent;
+}
+
+.wp-block-button__link::after {
+	content: '';
+	background: url(../../../../assets/images/button-arrow.svg);
+	width: 15px;
+	height: 5px;
+	display: block;
+	position: absolute;
+	right: calc( var(--contents-element-margin) );
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.wp-block-button.is-style-outline .wp-block-button__link::after {
+	background: url(../../../../assets/images/button-arrow-bk.svg);
+}
