@@ -1,0 +1,7 @@
+.wp-block-quote > *:first-child {
+	margin-top: 0;
+}
+
+.wp-block-quote > *:last-child {
+	margin-bottom: 0;
+}

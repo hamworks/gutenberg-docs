@@ -7,6 +7,7 @@
 body {
 	font-size: 18px;
 	line-height: 1.7;
+	box-sizing: border-box;
 }
 
 body,
@@ -31,4 +32,110 @@ figure, p {
 figure {
 	margin-left: 0;
 	margin-right: 0;
+}
+
+a {
+	color: #000;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin-bottom: 20px;
+}
+
+h2,
+h3 {
+	margin-top: 40px;
+}
+
+h4,
+h5,
+h6 {
+	margin-top: 20px;
+}
+
+h1 + h2,
+h2 + h3,
+h3 + h4,
+h4 + h5 {
+	margin-top: 20px;
+}
+
+h1 {
+	margin-top: 48px;
+	margin-bottom: 20px;
+	font-size: 38px;
+}
+
+h2 {
+	font-size: 32px;
+	border-bottom: 3px solid #000;
+}
+
+h3 {
+	font-size: 26px;
+	position: relative;
+	padding-left: 25px;
+}
+
+h3::before {
+	content: '';
+	background: url(../../../assets/images/heading-icon.svg) no-repeat left center;
+	background-size: contain;
+	display: block;
+	width: 19px;
+	height: 19px;
+	position: absolute;
+	top: calc(26px/2);
+	left: 0;
+}
+
+h4 {
+	font-size: 22px;
+}
+
+h5 {
+	font-size: 20px;
+}
+
+h6 {
+	font-size: 18px;
+}
+
+ol,
+ul {
+	padding-left: 1.1em;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+li {
+	margin-top: 5px;
+}
+
+li > ol,
+li > ul {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+pre {
+	white-space: pre-wrap;
+}
+
+table {
+	width: 100%;
+	border-bottom: none;
+}
+
+th, td {
+	border-color: var(--light-gray);
 }

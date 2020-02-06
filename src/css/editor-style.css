@@ -1,8 +1,26 @@
 @charset "UTF-8";
 
 @import 'variable.css';
-@import '_elements.css';
-@import '_accessibility.css';
+
+@import 'foundation/_elements.css';
+@import 'foundation/_alignment.css';
+@import 'foundation/_font-size.css';
+
+@import 'component/blocks/_blocks.css';
+@import 'component/blocks/_button.css';
+@import 'component/blocks/_code.css';
+@import 'component/blocks/_columns.css';
+@import 'component/blocks/_cover.css';
+@import 'component/blocks/_file.css';
+@import 'component/blocks/_gallery.css';
+@import 'component/blocks/_image.css';
+@import 'component/blocks/_latest-comments.css';
+@import 'component/blocks/_latest-posts.css';
+@import 'component/blocks/_media-text.css';
+@import 'component/blocks/_quote.css';
+@import 'component/blocks/_separator.css';
+@import 'component/blocks/_spacer.css';
+@import 'component/blocks/_table.css';
 
 .wp-block {
 	max-width: 1024px !important;
@@ -17,7 +35,7 @@
 }
 
 .editor-writing-flow {
-	font-size: 14px;
+	font-size: var(--font-size-default);
 }
 
 .blocks-gallery-item {

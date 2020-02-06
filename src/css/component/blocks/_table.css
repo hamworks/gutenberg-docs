@@ -1,0 +1,8 @@
+.wp-block-table.is-style-stripes {
+	border-bottom: none;
+}
+
+.wp-block-table td,
+.wp-block-table th {
+	border-color: var(--light-gray);
+}
