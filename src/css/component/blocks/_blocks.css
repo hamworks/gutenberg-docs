@@ -1,16 +1,16 @@
-
-.wp-block-group.is-style-resource {
-	background-color: #25b7c0;
-	color: #fff;
-	overflow: hidden;
+[class*="wp-block"] {
+	margin-top: var(--contents-element-margin);
+	margin-bottom: var(--contents-element-margin);
 }
 
-.wp-block-group.is-style-resource h3 {
-	font-family: "FOT-筑紫A丸ゴシック Std E";
-	font-size: 20px;
-	font-size: 2rem;
-	line-height: 1;
-	margin: 0 0 20px;
+[class*="wp-block"] > [class*="wp-block"] {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.editor-writing-flow [class*="wp-block"] {
+	margin-top: 0;
+	margin-bottom: 0;
 }
 
 .wp-block-group.is-style-resource .wp-block-group__inner-container {
