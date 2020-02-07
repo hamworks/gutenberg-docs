@@ -10,7 +10,6 @@
  */
 ?>
 
-
 <footer class="site-footer">
 	<div class="site-footer__inner">
 		<?php dynamic_sidebar( 'widget-footer' ); ?>
@@ -18,9 +17,9 @@
 		<?php
 		wp_nav_menu(
 			array(
-				'menu'       => 'footer',
-				'container'  => false,
-				'menu_class' => 'menu site-footer__nav',
+				'theme_location' => 'footer',
+				'container'      => false,
+				'menu_class'     => 'menu site-footer__nav',
 			)
 		);
 		?>
