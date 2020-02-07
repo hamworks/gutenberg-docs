@@ -1,0 +1,15 @@
+.site-copyright {
+	padding: var(--contents-element-margin);
+	font-size: 10px;
+	color: var(--primary-color);
+	display: flex;
+	justify-content: space-between;
+}
+
+.site-copyright * {
+	margin: 0;
+}
+
+.site-copyright__company img {
+	width: 135px;
+}

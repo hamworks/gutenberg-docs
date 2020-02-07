@@ -146,12 +146,12 @@ add_action( 'after_setup_theme', 'hamworks_content_width', 0 );
 function hamworks_widgets_init() {
 	register_sidebar(
 		array(
-			'name'          => 'リソース表示',
-			'id'            => 'widget-resource',
-			'description'   => '直近のリソースの表示エリア',
-			'before_widget' => '<div id="%1$s" class="widget %2$s">',
+			'name'          => 'フッターウィジェット',
+			'id'            => 'widget-footer',
+			'description'   => 'フッターに表示させるコンテンツ',
+			'before_widget' => '<div id="%1$s" class="widget widget-footer %2$s">',
 			'after_widget'  => '</div>',
-			'before_title'  => '<h3>',
+			'before_title'  => '<h3 class="widget-footer__title">',
 			'after_title'   => '</h3>',
 		)
 	);

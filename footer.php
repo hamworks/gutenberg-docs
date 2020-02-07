@@ -10,50 +10,26 @@
  */
 ?>
 
-<?php dynamic_sidebar( 'widget-resource' ); ?>
 
-<footer class="footer">
-	<div class="footer__nav">
-		<div class="footer__inner">
-			<?php
-			wp_nav_menu(
-				array(
-					'theme_location'  => 'footer',
-					'menu_id'         => 'footer-nav',
-					'menu_class'      => 'fnav__list',
-					'container'       => 'div',
-					'container_class' => 'fnav',
-				)
-			);
-			?>
-			<?php
-			wp_nav_menu(
-				array(
-					'theme_location'  => 'sns',
-					'menu_id'         => 'sns-nav',
-					'menu_class'      => 'sns__list',
-					'container'       => 'div',
-					'container_class' => 'sns',
-				)
-			);
-			?>
-		</div><!-- /.footer__inner -->
-	</div><!-- /.footer__nav -->
+<footer class="site-footer">
+	<div class="site-footer__inner">
+		<?php dynamic_sidebar( 'widget-footer' ); ?>
 
-	<div class="footer__bottom">
-		<div class="top-back">
-			<a href="#top" class="js-goto-pagetop"></a>
-		</div>
-		<div class="footer__inner">
-			<div class="copyright"><small>© HAMWORKS Co., Ltd.</small></div>
-			<div class="footer__hamrobo"><img src="<?php echo esc_attr( get_theme_file_uri( '/assets/images/hamrobo.svg' ) ); ?>" alt=""></div>
-		</div><!-- /.footer__inner -->
-	</div><!-- /.footer__bottom -->
+		<?php
+		wp_nav_menu(
+			array(
+				'menu'       => 'footer',
+				'container'  => false,
+				'menu_class' => 'menu site-footer__nav',
+			)
+		);
+		?>
+	</div><!-- /.site-footer__inner -->
 </footer>
-
-</div><!-- /.footer-area -->
-</div><!-- /.wrap -->
-
+<aside class="site-copyright">
+	<div class="site-copyright__company"><a href="https://ham.works/" target="_blank"><img src="<?php echo esc_attr( get_theme_file_uri( '/assets/images/hamworks-logo.svg' ) ); ?>" alt="株式会社HAMWORKSへのリンク"></a></div>
+	<p><?php \HamDocs\render_copyright(); ?></p>
+</aside>
 <?php wp_footer(); ?>
 </body>
 </html>
