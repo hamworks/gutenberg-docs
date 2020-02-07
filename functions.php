@@ -77,8 +77,8 @@ if ( ! function_exists( 'hamworks_setup' ) ) :
 		add_theme_support(
 			'custom-logo',
 			array(
-				'height'      => 50,
-				'width'       => 280,
+				'height'      => 446,
+				'width'       => 60,
 				'flex-width'  => true,
 				'flex-height' => true,
 			)
@@ -207,3 +207,8 @@ require get_template_directory() . '/inc/template-functions.php';
  * Customizer additions.
  */
 require get_template_directory() . '/inc/customizer.php';
+
+/**
+ * サイト名の出力
+ */
+require get_template_directory() . '/inc/site-name.php';
