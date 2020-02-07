@@ -1,7 +1,22 @@
-.wp-block-quote > *:first-child {
-	margin-top: 0;
+.wp-block-quote {
+	border-left: none;
+	padding-left: 40px;
 }
 
-.wp-block-quote > *:last-child {
-	margin-bottom: 0;
+.wp-block-quote.is-style-large,
+.wp-block-quote.is-large {
+	margin-bottom: 20px;
+	padding: 30px 40px;
+}
+
+.wp-block-quote.is-style-large::before,
+.wp-block-quote.is-large::before{
+	top: 20px;
+	left: 20px;
+}
+
+.wp-block-quote.is-style-large::after,
+.wp-block-quote.is-large::after {
+	bottom: 20px;
+	right: 20px;
 }

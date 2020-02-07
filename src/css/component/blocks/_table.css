@@ -5,4 +5,5 @@
 .wp-block-table td,
 .wp-block-table th {
 	border-color: var(--light-gray);
+	padding: 10px;
 }

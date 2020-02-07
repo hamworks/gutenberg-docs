@@ -1,4 +1,6 @@
 .wp-block-separator {
 	margin-top: 56px;
 	margin-bottom: 56px;
+	border-bottom: 1px solid #CCC;
+	color: #CCC;
 }

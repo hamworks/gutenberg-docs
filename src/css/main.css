@@ -10,6 +10,7 @@
 @import 'layout/site/_container.css';
 @import 'layout/site/_main.css';
 @import 'layout/site/_footer.css';
+@import 'layout/site/_copyright.css';
 
 @import 'component/blocks/_blocks.css';
 @import 'component/blocks/_button.css';
@@ -22,6 +23,7 @@
 @import 'component/blocks/_latest-comments.css';
 @import 'component/blocks/_latest-posts.css';
 @import 'component/blocks/_media-text.css';
+@import 'component/blocks/_pullquote.css';
 @import 'component/blocks/_quote.css';
 @import 'component/blocks/_separator.css';
 @import 'component/blocks/_spacer.css';

@@ -1,0 +1,10 @@
+.wp-block-pullquote blockquote {
+	background: none;
+	padding: 0;
+	margin: 0;
+}
+
+.wp-block-pullquote blockquote::before,
+.wp-block-pullquote blockquote::after {
+	content: '';
+}
