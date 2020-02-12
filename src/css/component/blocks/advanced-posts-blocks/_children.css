@@ -1,0 +1,15 @@
+.wp-block-advanced-posts-block-children {
+	margin: 0;
+}
+
+@media (--window-medium) {
+	.wp-block-advanced-posts-block-children {
+		display: flex;
+		flex-wrap: wrap;
+	}
+}
+
+@media (--window-large) {
+	.wp-block-advanced-posts-block-children {
+	}
+}
