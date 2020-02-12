@@ -1,3 +1,11 @@
+.site-header-nav {
+	margin-top: var(--contents-element-margin);
+}
+
+.site-header .site-header-nav {
+	margin-top: 0;
+}
+
 .site-header-nav > .menu {
 	list-style: none;
 	margin: 20px 0 0;
