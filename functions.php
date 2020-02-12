@@ -84,6 +84,22 @@ if ( ! function_exists( 'hamworks_setup' ) ) :
 			)
 		);
 
+		/**
+		 * Add support for core custom headers.
+		 *
+		 * @link https://codex.wordpress.org/Custom_Headers
+		 */
+		add_theme_support(
+			'custom-header',
+			array(
+				'height'        => 670,
+				'width'         => 1440,
+				'flex-width'    => true,
+				'flex-height'   => true,
+				'default-image' => get_template_directory_uri() . '/assets/images/header.png',
+			)
+		);
+
 		// Adding support for core block visual styles.
 		add_theme_support( 'wp-block-styles' );
 
@@ -163,10 +179,10 @@ add_action( 'widgets_init', 'hamworks_widgets_init' );
  * Enqueue scripts and styles.
  */
 function hamworks_scripts() {
-	wp_enqueue_style( 'hamworks-style', get_theme_file_uri( '/build/css/main.css' ), false, wp_get_theme()->get( 'Version' ) );
+	wp_enqueue_style( 'hamdocs-style', get_theme_file_uri( '/build/css/main.css' ), false, wp_get_theme()->get( 'Version' ) );
+	wp_enqueue_style( 'hamdocs-webfont', 'https://fonts.googleapis.com/css?family=Vollkorn&display=swap', false, wp_get_theme()->get( 'Version' ) );
 
-	wp_enqueue_script( 'hamworks-script', get_template_directory_uri() . '/build/js/index.js', array( 'jquery' ), wp_get_theme()->get( 'Version' ), true );
-	wp_enqueue_script( 'hamworks-fontplus', 'https://webfont.fontplus.jp/accessor/script/fontplus.js?10lGcLVOyG8%3D&box=YPDkVlSgB4o%3D&aa=1&ab=2', array(), wp_get_theme()->get( 'Version' ), false );
+	wp_enqueue_script( 'hamdocs-script', get_template_directory_uri() . '/build/js/index.js', array( 'jquery' ), wp_get_theme()->get( 'Version' ), true );
 }
 
 add_action( 'wp_enqueue_scripts', 'hamworks_scripts' );
@@ -212,3 +228,8 @@ require get_template_directory() . '/inc/customizer.php';
  * サイト名の出力
  */
 require get_template_directory() . '/inc/site-name.php';
+
+/**
+ * アイキャッチの出力
+ */
+require get_template_directory() . '/inc/the_post_thumbnail.php';
