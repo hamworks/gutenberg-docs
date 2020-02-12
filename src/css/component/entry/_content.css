@@ -1,0 +1,21 @@
+.entry-content {
+	padding: 20px var(--contents-side-margin);
+	background: var(--white);
+	border-radius: 10px;
+}
+
+.entry-content::after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
+.entry-content > *:first-child {
+	margin-top: 0;
+}
+
+@media (--window-large) {
+	.entry-content {
+		padding: 20px var(--contents-side-margin-pc);
+	}
+}

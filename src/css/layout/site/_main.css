@@ -1,0 +1,7 @@
+
+@media (--window-large) {
+	.site-container.has-right-sidebar .site-main {
+		flex-basis: calc( 72% - 30px );
+		margin-right: 30px;
+	}
+}

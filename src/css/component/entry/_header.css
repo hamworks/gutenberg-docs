@@ -1,0 +1,20 @@
+.entry-header {
+	background: url(../../../../assets/images/bg-heading.png) no-repeat right bottom var(--primary-color);
+	color: var(--white);
+	padding: 20px 0;
+	margin-bottom: 30px;
+}
+
+.entry-header__inner {
+	max-width: var(--contents-full-width);
+	margin: 0 auto;
+	padding-left: var(--contents-side-margin);
+	padding-right: var(--contents-side-margin);
+}
+
+@media (--window-large) {
+	.entry-header__inner {
+		padding-left: var(--contents-side-margin-pc);
+		padding-right: var(--contents-side-margin-pc);
+	}
+}

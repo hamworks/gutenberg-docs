@@ -12,6 +12,7 @@
 @import 'layout/site/_header-nav.css';
 @import 'layout/site/_logo.css';
 @import 'layout/site/_main.css';
+@import 'layout/site/_breadcrumbs.css';
 @import 'layout/site/_footer.css';
 @import 'layout/site/_copyright.css';
 
@@ -39,3 +40,7 @@
 @import 'component/widget/_footer.css';
 
 @import 'component/entry/_content.css';
+@import 'component/entry/_thumbnail.css';
+@import 'component/entry/_header.css';
+@import 'component/entry/_title.css';
+@import 'component/entry/_posted.css';

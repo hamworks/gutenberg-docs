@@ -1,0 +1,22 @@
+.site-container {
+	background: var(--light-gray);
+	padding-bottom: 60px;
+}
+
+.site-container__inner {
+	padding-left: var(--contents-side-margin);
+	padding-right: var(--contents-side-margin);
+}
+
+@media (--window-large) {
+	.site-container__inner {
+		max-width: var(--contents-full-width);
+		margin: 0 auto;
+		padding-left: var(--contents-side-margin-pc);
+		padding-right: var(--contents-side-margin-pc);
+	}
+
+	.site-container.has-right-sidebar .site-container__inner {
+		display: flex;
+	}
+}

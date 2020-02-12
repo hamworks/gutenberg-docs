@@ -1,0 +1,13 @@
+.entry-thumbnail {
+	max-width: var(--contents-full-width);
+	margin: var(--contents-element-margin) auto;
+	padding-left: var(--contents-side-margin);
+	padding-right: var(--contents-side-margin);
+}
+
+@media (--window-large) {
+	.entry-thumbnail {
+		padding-left: var(--contents-side-margin-pc);
+		padding-right: var(--contents-side-margin-pc);
+	}
+}
