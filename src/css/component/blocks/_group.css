@@ -1,0 +1,28 @@
+.wp-block-group.is-style-heading {
+	background: url(../../../../assets/images/bg-heading.png) no-repeat right bottom var(--primary-color);
+	color: var(--white);
+	padding: 20px 0;
+	margin-bottom: 10px;
+}
+
+.wp-block-group.is-style-heading:first-of-type {
+	margin-top: 0;
+}
+
+@media (--window-large) {
+	.wp-block-group.is-style-heading {
+		background: url(../../../../assets/images/bg-heading.png) no-repeat right center var(--primary-color);
+		background-size: contain;
+	}
+}
+
+.wp-block-group.alignfull .wp-block-group__inner-container {
+	max-width: var(--contents-full-width);
+	margin: 0 auto;
+	padding-left: var(--contents-side-margin);
+	padding-right: var(--contents-side-margin);
+}
+
+.wp-block-group.is-style-heading .wp-block-columns {
+	align-items: center;
+}

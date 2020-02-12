@@ -14,3 +14,8 @@
 .has-huge-font-size {
 	font-size: calc( var(--font-size-default) * 2.1 );
 }
+
+.is-style-heading-english {
+	font-size: 25px;
+	font-family: 'Vollkorn', serif;
+}
