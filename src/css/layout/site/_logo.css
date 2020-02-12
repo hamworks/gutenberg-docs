@@ -1,10 +1,15 @@
 .site-logo {
 	margin: 0;
-	padding-left: 10px;
 	font-size: 18px;
 	color: var(--white);
 }
 
 .site-logo a {
 	color: var(--white);
+}
+
+@media (--window-large) {
+	.site-logo {
+		padding-left: 10px;
+	}
 }

@@ -23,6 +23,13 @@
 	padding-right: var(--contents-side-margin);
 }
 
+@media (--window-large) {
+	.wp-block-group.alignfull .wp-block-group__inner-container {
+		padding-left: var(--contents-side-margin-pc);
+		padding-right: var(--contents-side-margin-pc);
+	}
+}
+
 .wp-block-group.is-style-heading .wp-block-columns {
 	align-items: center;
 }

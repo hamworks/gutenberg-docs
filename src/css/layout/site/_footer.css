@@ -10,6 +10,13 @@
 	margin: 0 auto;
 }
 
+@media (--window-large) {
+	.site-footer__inner {
+		padding-left: var(--contents-side-margin-pc);
+		padding-right: var(--contents-side-margin-pc);
+	}
+}
+
 .site-footer a {
 	color: var(--white);
 	text-decoration: none;

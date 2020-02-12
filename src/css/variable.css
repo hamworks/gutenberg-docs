@@ -15,10 +15,11 @@
 
 	--contents-full-width: 1210px;
 	--contents-block-margin: 60px;
-	--contents-side-margin: 30px;
-	--contents-element-margin: 25px;
+	--contents-side-margin: 15px;
+	--contents-side-margin-pc: calc( var(--contents-side-margin)*2 );
+	--contents-element-margin: 15px;
+	--contents-element-margin-pc: calc( var(--contents-element-margin)*2 );
 
 	--hover-opacity: 0.7;
 	--hover-transition-time: 0.17s;
 }
-

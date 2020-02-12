@@ -7,8 +7,8 @@
 
 @media (--window-medium) {
 	.wp-card-block {
-		flex-basis: calc(50% - calc(var(--contents-side-margin)/2) );
-		margin-right: var(--contents-side-margin);
+		flex-basis: calc(50% - calc(var(--contents-side-margin-pc)/2) );
+		margin-right: var(--contents-side-margin-pc);
 	}
 
 	.wp-card-block:nth-child(even) {
@@ -18,12 +18,12 @@
 
 @media (--window-large) {
 	.wp-card-block {
-		flex-basis: calc(25% - calc(var(--contents-side-margin)*3/4) );
-		margin-right: var(--contents-side-margin);
+		flex-basis: calc(25% - calc(var(--contents-side-margin-pc)*3/4) );
+		margin-right: var(--contents-side-margin-pc);
 	}
 
 	.wp-card-block:nth-child(even) {
-		margin-right: var(--contents-side-margin);
+		margin-right: var(--contents-side-margin-pc);
 	}
 
 	.wp-card-block:nth-child(4n) {

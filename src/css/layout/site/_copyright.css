@@ -1,9 +1,16 @@
 .site-copyright {
-	padding: var(--contents-element-margin);
+	padding: var(--contents-element-margin) var(--contents-side-margin);
 	font-size: 10px;
 	color: var(--primary-color);
 	display: flex;
 	justify-content: space-between;
+}
+
+@media (--window-large) {
+	.site-copyright {
+		padding-left: var(--contents-side-margin-pc);
+		padding-right: var(--contents-side-margin-pc);
+	}
 }
 
 .site-copyright * {
