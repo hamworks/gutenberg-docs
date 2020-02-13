@@ -192,7 +192,7 @@ hr {
 	border-bottom: 1px solid #CCC;
 }
 
-button, [type="button"], [type="reset"], [type="submit"] {
+[type="submit"] {
 	background: var(--primary-color);
 	color: var(--white);
 	padding: 5px 10px;
