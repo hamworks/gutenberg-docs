@@ -16,6 +16,6 @@
 
 @media (--window-large) {
 	.entry-content {
-		padding: 20px var(--contents-side-margin-pc);
+		padding: 45px 60px;
 	}
 }
