@@ -194,7 +194,7 @@ function hamdocs_scripts() {
 	wp_enqueue_style( 'hamdocs-style', get_theme_file_uri( '/build/css/main.css' ), false, wp_get_theme()->get( 'Version' ) );
 	wp_enqueue_style( 'hamdocs-webfont', 'https://fonts.googleapis.com/css?family=Vollkorn&display=swap', false, wp_get_theme()->get( 'Version' ) );
 
-	wp_enqueue_script( 'hamdocs-script', get_template_directory_uri() . '/build/js/index.js', array( 'jquery' ), wp_get_theme()->get( 'Version' ), true );
+	// wp_enqueue_script( 'hamdocs-script', get_template_directory_uri() . '/build/js/index.js', array( 'jquery' ), wp_get_theme()->get( 'Version' ), true );
 }
 
 add_action( 'wp_enqueue_scripts', 'hamdocs_scripts' );
