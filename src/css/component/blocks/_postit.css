@@ -1,0 +1,18 @@
+.wp-block-postit__text {
+	background: #FF9;
+	border-left: 5px solid rgba(0,0,0,0.15);
+	padding: 10px 20px;
+	font-weight: bold;
+}
+
+.wp-block-postit__text span {
+	color: #f00;
+}
+
+@media (--window-medium) {
+	.wp-block-postit__text {
+		min-width: 70%;
+		display: inline-block;
+		padding: 20px 60px 20px 25px;
+	}
+}
