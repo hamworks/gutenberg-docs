@@ -1,5 +1,5 @@
 /**
- * List
+ * Group
  **/
 wp.blocks.registerBlockStyle( 'core/group', {
 	name: 'heading',
