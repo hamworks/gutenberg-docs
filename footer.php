@@ -27,7 +27,7 @@
 </footer>
 <aside class="site-copyright">
 	<div class="site-copyright__company"><a href="https://ham.works/" target="_blank"><img src="<?php echo esc_attr( get_theme_file_uri( '/assets/images/hamworks-logo.svg' ) ); ?>" alt="株式会社HAMWORKSへのリンク"></a></div>
-	<p><?php \HamDocs\render_copyright(); ?></p>
+	<p><?php hamdocs_render_copyright(); ?></p>
 </aside>
 <?php wp_footer(); ?>
 </body>
