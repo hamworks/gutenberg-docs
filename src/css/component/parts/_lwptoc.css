@@ -1,0 +1,41 @@
+.widget_lpwtoc_widget {
+	position: sticky;
+	top: 0;
+}
+
+.widget_lpwtoc_widget .lwptoc {
+	margin: 0;
+}
+
+.widget_lpwtoc_widget .lwptoc:first-child {
+	margin-top: 0;
+}
+
+.widget_lpwtoc_widget .lwptoc_i {
+	padding: 0;
+}
+
+.lwptoc_header {
+	text-align: center;
+	font-size: 25px;
+}
+
+.lwptoc_itemWrap {
+	font-size: 16px;
+}
+
+.lwptoc_itemWrap li {
+	border-bottom: 1px solid #ccc;
+}
+
+.lwptoc_itemWrap a {
+	text-decoration: none;
+	display: block;
+	padding: 8px 0 8px 16px;
+	background: url(../../../../assets/images/arrow-gray.svg) no-repeat 0 16px;
+	transition: opacity var(--hover-transition-time);
+}
+
+.lwptoc_itemWrap a:hover {
+	opacity: var(--hover-opacity);
+}

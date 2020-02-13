@@ -159,7 +159,7 @@ add_action( 'after_setup_theme', 'hamworks_content_width', 0 );
  *
  * @link https://developer.wordpress.org/themes/functionality/sidebars/#registering-a-sidebar
  */
-function hamworks_widgets_init() {
+function hamdocs_widgets_init() {
 	register_sidebar(
 		array(
 			'name'          => 'フッターウィジェット',
@@ -171,9 +171,21 @@ function hamworks_widgets_init() {
 			'after_title'   => '</h3>',
 		)
 	);
+
+	register_sidebar(
+		array(
+			'name'          => '詳細ページウィジェット',
+			'id'            => 'widget-singular-sidebar',
+			'description'   => '詳細ページサイドバーに表示するウィジェット',
+			'before_widget' => '<div id="%1$s" class="widget widget-singular-sidebar %2$s">',
+			'after_widget'  => '</div>',
+			'before_title'  => '<h3 class="widget-singular-sidebar__title">',
+			'after_title'   => '</h3>',
+		)
+	);
 }
 
-add_action( 'widgets_init', 'hamworks_widgets_init' );
+add_action( 'widgets_init', 'hamdocs_widgets_init' );
 
 /**
  * Enqueue scripts and styles.

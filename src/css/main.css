@@ -11,8 +11,9 @@
 @import 'layout/site/_header.css';
 @import 'layout/site/_header-nav.css';
 @import 'layout/site/_logo.css';
-@import 'layout/site/_main.css';
 @import 'layout/site/_breadcrumbs.css';
+@import 'layout/site/_main.css';
+@import 'layout/site/_sidebar.css';
 @import 'layout/site/_footer.css';
 @import 'layout/site/_copyright.css';
 
@@ -36,6 +37,7 @@
 @import 'component/blocks/advanced-posts-blocks/_children.css';
 
 @import 'component/parts/_card.css';
+@import 'component/parts/_lwptoc.css';
 
 @import 'component/widget/_footer.css';
 

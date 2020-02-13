@@ -36,8 +36,11 @@
 						)
 					);
 					?>
-				</div><!-- .entry-content -->
-			</div><!-- #primary -->
+				</div><!-- /.entry-content -->
+			</div><!-- /.site-main -->
+			<div class="site-sidebar">
+				<?php dynamic_sidebar( 'widget-singular-sidebar' ); ?>
+			</div><!-- /.site-sidebar -->
 		</div><!-- /.site-container__inner -->
 	</div><!-- /.site-container -->
 </article>

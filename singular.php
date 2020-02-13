@@ -18,6 +18,7 @@ get_header(); ?>
 		get_template_part( 'template-parts/content', get_post_type() );
 	endwhile;
 	?>
+
 </main>
 <?php
 get_footer();

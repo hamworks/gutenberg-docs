@@ -40,7 +40,7 @@
 }
 
 @media (--window-large) {
-	.site-container .alignfull {
+	.site-container.has-right-sidebar .alignfull {
 		width: auto;
 		margin-left: calc(-1 * var(--contents-element-margin) );
 		margin-right: calc(-1 * var(--contents-element-margin) );
