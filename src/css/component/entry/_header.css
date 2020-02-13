@@ -5,6 +5,10 @@
 	margin-bottom: 30px;
 }
 
+.archive .entry-header {
+	margin-bottom: 0;
+}
+
 .entry-header__inner {
 	max-width: var(--contents-full-width);
 	margin: 0 auto;

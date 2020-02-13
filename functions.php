@@ -244,3 +244,8 @@ require get_template_directory() . '/inc/site-name.php';
  * アイキャッチの出力
  */
 require get_template_directory() . '/inc/the_post_thumbnail.php';
+
+/**
+ * アーカイブタイトルの出力内容を調整
+ */
+require get_template_directory() . '/inc/the_archive_title.php';

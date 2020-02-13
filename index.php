@@ -14,40 +14,46 @@
 
 get_header(); ?>
 
-	<main id="primary" class="site-main">
-
+<main id="primary">
 	<?php
-	if ( have_posts() ) :
+	if ( ! is_front_page() ) :
+		get_template_part( 'template-parts/breadcrumb' );
+	endif;
+	?>
 
-		if ( is_home() && ! is_front_page() ) : ?>
-			<header>
-				<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
-			</header>
+	<div class="site-container">
+		<header class="entry-header">
+			<div class="entry-header__inner">
+				<?php if ( is_home() && ! is_front_page() ) : ?>
+					<h1 class="entry-title"><?php single_post_title(); ?></h1>
+				<?php else : ?>
+					<h1 class="entry-title"><?php the_archive_title(); ?></h1>
+				<?php endif; ?>
+			</div><!-- /.entry-header__inner -->
+		</header><!-- /.entry-header -->
+		<div class="site-container__inner">
+			<div class="site-main">
+				<?php if ( have_posts() ) : ?>
+					<div class="wp-card-blocks">
+						<?php
+						while ( have_posts() ) :
+							the_post();
 
-		<?php
-		endif;
+							get_template_part( 'template-parts/content', 'archive' );
 
-		/* Start the Loop */
-		while ( have_posts() ) : the_post();
-
-			/*
-				* Include the Post-Format-specific template for the content.
-				* If you want to override this in a child theme, then include a file
-				* called content-___.php (where ___ is the Post Format name) and that will be used instead.
-				*/
-			get_template_part( 'template-parts/content', get_post_format() );
-
-		endwhile;
-
-		the_posts_navigation();
-
-	else :
-
-		get_template_part( 'template-parts/content', 'none' );
-
-	endif; ?>
-
-	</main><!-- #primary -->
+						endwhile;
+						?>
+					</div><!-- /.wp-card-blocks -->
+					<?php
+					the_posts_navigation();
+				else :
+					get_template_part( 'template-parts/content', 'none' );
+				endif;
+				?>
+			</div><!-- /.site-main -->
+		</div><!-- /.site-container__inner -->
+	</div><!-- /.site-container -->
+</main><!-- #primary -->
 
 <?php
 get_footer();

@@ -1,0 +1,10 @@
+.nav-links {
+	display: flex;
+	justify-content: center;
+	margin-top: var(--contents-block-margin);
+}
+
+.nav-links .nav-previous,
+.nav-links .nav-next {
+	margin: 0 var(--contents-element-margin);
+}
