@@ -7,7 +7,7 @@
  * @package Hamworks
  */
 
-if ( ! function_exists( 'hamworks_setup' ) ) :
+if ( ! function_exists( 'hamdocs_setup' ) ) :
 	/**
 	 * Sets up theme defaults and registers support for various WordPress features.
 	 *
@@ -15,7 +15,7 @@ if ( ! function_exists( 'hamworks_setup' ) ) :
 	 * runs before the init hook. The init hook is too late for some features, such
 	 * as indicating support for post thumbnails.
 	 */
-	function hamworks_setup() {
+	function hamdocs_setup() {
 		/*
 		 * Make theme available for translation.
 		 * Translations can be filed in the /languages/ directory.
@@ -139,7 +139,7 @@ if ( ! function_exists( 'hamworks_setup' ) ) :
 		add_editor_style( 'build/css/editor-style.css' );
 	}
 endif;
-add_action( 'after_setup_theme', 'hamworks_setup' );
+add_action( 'after_setup_theme', 'hamdocs_setup' );
 
 /**
  * Set the content width in pixels, based on the theme's design and stylesheet.
@@ -148,11 +148,11 @@ add_action( 'after_setup_theme', 'hamworks_setup' );
  *
  * @global int $content_width
  */
-function hamworks_content_width() {
-	$GLOBALS['content_width'] = apply_filters( 'hamworks_content_width', 1000 );
+function hamdocs_content_width() {
+	$GLOBALS['content_width'] = apply_filters( 'hamdocs_content_width', 1000 );
 }
 
-add_action( 'after_setup_theme', 'hamworks_content_width', 0 );
+add_action( 'after_setup_theme', 'hamdocs_content_width', 0 );
 
 /**
  * Register widget area.
@@ -190,26 +190,26 @@ add_action( 'widgets_init', 'hamdocs_widgets_init' );
 /**
  * Enqueue scripts and styles.
  */
-function hamworks_scripts() {
+function hamdocs_scripts() {
 	wp_enqueue_style( 'hamdocs-style', get_theme_file_uri( '/build/css/main.css' ), false, wp_get_theme()->get( 'Version' ) );
 	wp_enqueue_style( 'hamdocs-webfont', 'https://fonts.googleapis.com/css?family=Vollkorn&display=swap', false, wp_get_theme()->get( 'Version' ) );
 
 	wp_enqueue_script( 'hamdocs-script', get_template_directory_uri() . '/build/js/index.js', array( 'jquery' ), wp_get_theme()->get( 'Version' ), true );
 }
 
-add_action( 'wp_enqueue_scripts', 'hamworks_scripts' );
+add_action( 'wp_enqueue_scripts', 'hamdocs_scripts' );
 
-function hamworks_block_editor_scripts() {
+function hamdocs_block_editor_scripts() {
 	wp_enqueue_script(
 		'hamworks-editor-script',
 		get_template_directory_uri() . '/build/js/add-advanced-style.js',
 		array( 'wp-blocks' )
 	);
 }
-add_action( 'enqueue_block_editor_assets', 'hamworks_block_editor_scripts' );
+add_action( 'enqueue_block_editor_assets', 'hamdocs_block_editor_scripts' );
 
 
-function hamworks_custom_logo( $html ) {
+function hamdocs_custom_logo( $html ) {
 	if ( $html ) {
 		return $html;
 	}
@@ -223,8 +223,7 @@ function hamworks_custom_logo( $html ) {
 	);
 
 }
-
-add_filter( 'get_custom_logo', 'hamworks_custom_logo' );
+add_filter( 'get_custom_logo', 'hamdocs_custom_logo' );
 
 /**
  * Functions which enhance the theme by hooking into WordPress.
