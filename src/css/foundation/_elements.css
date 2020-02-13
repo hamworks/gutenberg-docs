@@ -191,3 +191,14 @@ hr {
 	border: none;
 	border-bottom: 1px solid #CCC;
 }
+
+button, [type="button"], [type="reset"], [type="submit"] {
+	background: var(--primary-color);
+	color: var(--white);
+	padding: 5px 10px;
+	border: none;
+}
+
+input[type="password"] {
+	border: 1px solid var(--light-gray);
+}
