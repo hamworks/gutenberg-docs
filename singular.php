@@ -8,17 +8,19 @@
  */
 
 get_header(); ?>
-<?php get_template_part( 'template-parts/breadcrumb' ); ?>
 
 <main id="primary">
 	<?php
+	if ( ! is_front_page() ) :
+		get_template_part( 'template-parts/breadcrumb' );
+	endif;
+
 	while ( have_posts() ) :
 		the_post();
 
 		get_template_part( 'template-parts/content', get_post_type() );
 	endwhile;
 	?>
-
 </main>
 <?php
 get_footer();
