@@ -249,3 +249,8 @@ require get_template_directory() . '/inc/the_post_thumbnail.php';
  * アーカイブタイトルの出力内容を調整
  */
 require get_template_directory() . '/inc/the_archive_title.php';
+
+/**
+ * カテゴリーのリストを出力する
+ */
+require get_template_directory() . '/inc/category-list.php';

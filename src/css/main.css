@@ -38,8 +38,10 @@
 @import 'component/blocks/advanced-posts-blocks/_children.css';
 
 @import 'component/parts/_card.css';
+@import 'component/parts/_categories-name-list.css';
 @import 'component/parts/_lwptoc.css';
 @import 'component/parts/_nav-links.css';
+@import 'component/parts/_vertical-post.css';
 
 @import 'component/widget/_footer.css';
 

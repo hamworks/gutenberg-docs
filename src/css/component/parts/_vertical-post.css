@@ -1,0 +1,41 @@
+.vertical-post {
+	margin: var(--contents-element-margin) 0;
+}
+
+.vertical-post a {
+	display: flex;
+	text-decoration: none;
+}
+
+.vertical-post__thumb {
+	flex-basis: 40%;
+}
+
+.vertical-post__content {
+	margin-left: var(--contents-element-margin);
+	flex-basis: calc(60% - var(--contents-element-margin));
+}
+
+.vertical-post__title {
+	margin: 5px 0 0;
+	padding-left: 0;
+	font-size: 26px;
+}
+
+.vertical-post__title::before {
+	content: normal;
+}
+
+.vertical-post__excerpt {
+	font-size: 16px;
+}
+
+.vertical-post__excerpt * {
+	margin: 5px 0;
+}
+
+.vertical-post__date {
+	color: #026d76;
+	font-size: 14px;
+	margin: 5px 0 0;
+}

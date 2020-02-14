@@ -1,0 +1,13 @@
+.categories-name-list {
+	display: flex;
+	margin: 0;
+	font-size: 14px;
+	color: #555;
+	list-style: none;
+	padding-left: 0;
+}
+
+.categories-name-list li {
+	margin-top: 0;
+	margin-right: 10px;
+}
