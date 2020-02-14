@@ -1,8 +1,16 @@
+.site-sidebar {
+	margin-top: var(--contents-block-margin);
+}
+
 .site-sidebar > *:first-child {
 	margin-top: 0;
 }
 
 @media (--window-large) {
+	.site-sidebar {
+		margin-top: 0;
+	}
+
 	.site-container.has-right-sidebar .site-sidebar {
 		flex-basis: 28%;
 		margin-right: 30px;
