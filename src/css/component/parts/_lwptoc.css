@@ -1,6 +1,13 @@
 .widget_lpwtoc_widget {
 	position: sticky;
 	top: 0;
+	display: none;
+}
+
+@media (--window-large) {
+	.widget_lpwtoc_widget {
+		display: block;
+	}
 }
 
 .widget_lpwtoc_widget .lwptoc {
