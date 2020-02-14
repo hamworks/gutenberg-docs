@@ -2,7 +2,7 @@
 /**
  * カスタムロゴを設定しているかどうかの判定
  *
- * @package Hamworks
+ * @package Hamdocs
  */
 
 namespace HamDocs;

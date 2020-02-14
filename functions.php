@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
- * @package Hamworks
+ * @package Hamdocs
  */
 
 if ( ! function_exists( 'hamdocs_setup' ) ) :
