@@ -20,9 +20,12 @@
 <body <?php body_class(); ?>>
 <a class="skip-link screen-reader-text" href="#primary">コンテンツにスキップする</a>
 
-<?php if ( ! is_front_page() ) : ?>
 <header class="site-header">
-	<div class="site-logo"><?php \HamDocs\the_site_name(); ?></div>
+	<?php if ( is_front_page() ) : ?>
+		<h1 class="site-logo"><?php hamdocs_the_site_name(); ?></h1>
+	<?php else : ?>
+		<div class="site-logo"><?php hamdocs_the_site_name(); ?></div>
+	<?php endif; ?>
 	<?php
 	wp_nav_menu(
 		array(
@@ -34,17 +37,3 @@
 	);
 	?>
 </header>
-<?php else : ?>
-
-	<?php
-	wp_nav_menu(
-		array(
-			'theme_location'  => 'header',
-			'container'       => 'nav',
-			'container_class' => 'site-header-nav',
-			'menu_class'      => 'menu',
-		)
-	);
-	?>
-
-<?php endif; ?>
