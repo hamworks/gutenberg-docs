@@ -1,16 +1,8 @@
 <?php
 /**
- * カスタムロゴを設定しているかどうかの判定
- *
- * @package Hamdocs
- */
-
-namespace HamDocs;
-
-/**
  * カスタムロゴがあればカスタムロゴを出力し、なければサイト名を出力する
  */
-function the_site_name() {
+function hamdocs_the_site_name() {
 	if ( has_custom_logo() ) {
 		the_custom_logo();
 	} else {
