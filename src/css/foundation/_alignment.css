@@ -48,6 +48,10 @@
 }
 
 [class*="__inner-container"] > .alignwide,
-[class*="__inner-container"] > .alignfull {
+[class*="__inner-container"] > .alignfull,
+.wp-block-column .alignwide,
+.wp-block-column .alignfull {
 	width: 100%;
+	margin-left: 0;
+	margin-right: 0;
 }
