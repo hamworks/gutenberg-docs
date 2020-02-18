@@ -18,13 +18,7 @@
 
 @media (--window-medium) {
 	.vertical-post__thumb {
-		flex-basis: 35%;
-	}
-}
-
-@media (--window-large) {
-	.vertical-post__thumb {
-		flex-basis: 40%;
+		flex-basis: 30%;
 	}
 }
 
@@ -35,14 +29,8 @@
 @media (--window-medium) {
 	.vertical-post__content {
 		margin-top: 0;
-		flex-basis: calc(65% - var(--contents-element-margin));
-		margin-left: var(--contents-element-margin);
-	}
-}
-
-@media (--window-large) {
-	.vertical-post__content {
 		flex-basis: calc(60% - var(--contents-element-margin));
+		margin-left: var(--contents-element-margin);
 	}
 }
 
