@@ -1,12 +1,12 @@
 .site-breadcrumbs {
 	max-width: var(--contents-full-width);
-	margin: var(--contents-element-margin) auto;
+	margin: 8px auto var(--contents-element-margin);
 	padding-left: var(--contents-side-margin);
 	padding-right: var(--contents-side-margin);
 	display: flex;
 	flex-wrap: wrap;
 	list-style: none;
-	font-size: 16px;
+	font-size: 14px;
 	color: #444;
 }
 
