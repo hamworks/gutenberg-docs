@@ -6,10 +6,17 @@
 
 .site-logo a {
 	color: var(--white);
+	display: inline-block;
+	vertical-align: middle;
+	text-decoration: none;
 }
 
 @media (--window-large) {
 	.site-logo {
 		padding-left: 10px;
 	}
+}
+
+.site-logo .custom-logo {
+	margin-right: 10px;
 }
