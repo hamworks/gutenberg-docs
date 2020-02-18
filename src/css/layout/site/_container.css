@@ -3,6 +3,10 @@
 	padding-bottom: 60px;
 }
 
+.home .site-container {
+	padding-bottom: 0;
+}
+
 .site-container__inner {
 	padding-left: var(--contents-side-margin);
 	padding-right: var(--contents-side-margin);
