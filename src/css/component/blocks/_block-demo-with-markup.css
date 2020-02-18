@@ -1,0 +1,5 @@
+.wp-block-block-demo-with-markup pre {
+	clear: both;
+	background: var(--light-gray);
+	padding: 16px;
+}
