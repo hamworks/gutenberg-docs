@@ -3,7 +3,7 @@
 	margin-bottom: var(--contents-element-margin);
 }
 
-[class*="wp-block"] > [class*="wp-block"] {
+[class*="wp-block"]:not([class*="__inner-container"]) > [class*="wp-block"] {
 	margin-top: 0;
 	margin-bottom: 0;
 }
