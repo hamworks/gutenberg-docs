@@ -37,9 +37,14 @@
 	margin-top: var(--contents-element-margin);
 }
 
+@media (--window-medium) {
+	.wp-block-column.is-style-heading-description {
+		margin-top: 0;
+	}
+}
+
 @media (--window-large) {
 	.wp-block-column.is-style-heading-description {
 		flex-basis: calc(70% - 32px);
-		margin-top: 0;
 	}
 }
