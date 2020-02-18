@@ -19,3 +19,28 @@
 	font-size: 25px;
 	font-family: 'Vollkorn', serif;
 }
+
+.is-style-blog-title {
+	font-family: 'Vollkorn', serif;
+	border-bottom: none;
+}
+
+.is-style-blog-title::before {
+	content: '';
+	width: 130px;
+	height: 5px;
+	display: block;
+	background: #000;
+}
+
+@media (--window-large) {
+	.is-style-blog-title {
+		font-size: 50px;
+	}
+
+	.is-style-blog-title::before {
+		content: '';
+		width: 240px;
+		height: 10px;
+	}
+}
