@@ -1,8 +1,15 @@
+.wp-block-group.has-background {
+	padding: 40px 0;
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+
 .wp-block-group.is-style-heading {
 	background: url(../../../../assets/images/bg-heading.png) no-repeat right bottom var(--primary-color);
 	color: var(--white);
 	padding: 20px 0;
 	margin-bottom: 10px;
+	margin-top: 40px;
 }
 
 .wp-block-group.is-style-heading:first-of-type {
@@ -13,6 +20,7 @@
 	.wp-block-group.is-style-heading {
 		background: url(../../../../assets/images/bg-heading.png) no-repeat right center var(--primary-color);
 		background-size: contain;
+		margin-top: 56px;
 	}
 }
 
@@ -28,8 +36,18 @@
 		padding-left: var(--contents-side-margin-pc);
 		padding-right: var(--contents-side-margin-pc);
 	}
+
+	.wp-block-group.alignfull.is-style-short .wp-block-group__inner-container {
+		max-width: 80%;
+		margin: 0 auto;
+	}
 }
 
 .wp-block-group.is-style-heading .wp-block-columns {
 	align-items: center;
+	margin: 0;
+}
+
+.wp-block-group__inner-container > *:first-child {
+	margin-top: 0;
 }
