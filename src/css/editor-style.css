@@ -7,6 +7,7 @@
 @import 'foundation/_font.css';
 
 @import 'component/blocks/_blocks.css';
+@import 'component/blocks/_block-demo-with-markup.css';
 @import 'component/blocks/_button.css';
 @import 'component/blocks/_code.css';
 @import 'component/blocks/_columns.css';
@@ -27,6 +28,8 @@
 @import 'component/blocks/advanced-posts-blocks/_children.css';
 
 @import 'component/parts/_card.css';
+@import 'component/parts/_categories-name-list.css';
+@import 'component/parts/_vertical-post.css';
 
 .wp-block {
 	max-width: 1024px !important;

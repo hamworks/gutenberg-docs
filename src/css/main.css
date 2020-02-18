@@ -12,12 +12,14 @@
 @import 'layout/site/_header-nav.css';
 @import 'layout/site/_logo.css';
 @import 'layout/site/_breadcrumbs.css';
+@import 'layout/site/_main-visual.css';
 @import 'layout/site/_main.css';
 @import 'layout/site/_sidebar.css';
 @import 'layout/site/_footer.css';
 @import 'layout/site/_copyright.css';
 
 @import 'component/blocks/_blocks.css';
+@import 'component/blocks/_block-demo-with-markup.css';
 @import 'component/blocks/_button.css';
 @import 'component/blocks/_code.css';
 @import 'component/blocks/_columns.css';
