@@ -208,23 +208,6 @@ function hamdocs_block_editor_scripts() {
 }
 add_action( 'enqueue_block_editor_assets', 'hamdocs_block_editor_scripts' );
 
-
-function hamdocs_custom_logo( $html ) {
-	if ( $html ) {
-		return $html;
-	}
-	if ( is_customize_preview() ) {
-		return $html;
-	}
-	return sprintf(
-		'<a href="%1$s" class="custom-logo-link" rel="home">%2$s</a>',
-		esc_url( home_url( '/' ) ),
-		'<img src="' . get_theme_file_uri( '/assets/images/logo.svg' ) . '" class="custom-logo" alt="' . get_bloginfo( 'name' ) . '" />'
-	);
-
-}
-add_filter( 'get_custom_logo', 'hamdocs_custom_logo' );
-
 /**
  * Functions which enhance the theme by hooking into WordPress.
  */
