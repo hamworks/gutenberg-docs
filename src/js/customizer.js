@@ -10,7 +10,7 @@
 		function( value ) {
 			value.bind(
 				function( newval ) {
-					$( '.site-logo span' ).html( newval );
+					$( '.site-name' ).html( newval );
 				}
 			);
 		}

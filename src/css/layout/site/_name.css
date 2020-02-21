@@ -1,0 +1,12 @@
+.site-name {
+	flex-basis: calc(100% - 67px);
+	padding-left: 10px;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+@media (--window-medium) {
+	.site-name {
+		font-size: 16px;
+	}
+}

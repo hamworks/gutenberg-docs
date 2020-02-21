@@ -2,6 +2,8 @@
 	margin: 0;
 	font-size: 18px;
 	color: var(--white);
+	display: flex;
+	align-items: center;
 }
 
 .site-logo a {
@@ -18,5 +20,5 @@
 }
 
 .site-logo .custom-logo {
-	margin-right: 10px;
+	flex-basis: 67px;
 }
