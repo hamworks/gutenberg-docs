@@ -3,8 +3,6 @@
 	margin: 8px auto var(--contents-element-margin);
 	padding-left: var(--contents-side-margin);
 	padding-right: var(--contents-side-margin);
-	display: flex;
-	flex-wrap: wrap;
 	list-style: none;
 	font-size: 14px;
 	color: #444;
@@ -19,6 +17,7 @@
 
 .site-breadcrumbs li {
 	margin-top: 0;
+	display: inline;
 }
 
 .site-breadcrumbs li::after {
