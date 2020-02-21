@@ -53,6 +53,12 @@ h6 {
 	margin-bottom: 20px;
 }
 
+h1,
+h2,
+h3 {
+	line-height: 1.4;
+}
+
 h2,
 h3 {
 	margin-top: 40px;
@@ -74,12 +80,25 @@ h4 + h5 {
 h1 {
 	margin-top: 48px;
 	margin-bottom: 20px;
-	font-size: 38px;
+	font-size: 32px;
+}
+
+@media (--window-large) {
+	h1 {
+		font-size: 38px;
+	}
 }
 
 h2 {
-	font-size: 32px;
+	font-size: 28px;
 	border-bottom: 3px solid #000;
+	padding-bottom: 5px;
+}
+
+@media (--window-large) {
+	h2 {
+		font-size: 32px;
+	}
 }
 
 h3 {
