@@ -6,6 +6,7 @@
 @import 'foundation/_accessibility.css';
 @import 'foundation/_alignment.css';
 @import 'foundation/_font.css';
+@import 'foundation/_colors.css';
 
 @import 'layout/site/_container.css';
 @import 'layout/site/_header.css';

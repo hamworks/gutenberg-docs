@@ -15,6 +15,34 @@
 	background: transparent;
 }
 
+.is-style-outline .wp-block-button__link.has-red-background-color {
+	border-color: #760303;
+}
+
+.is-style-outline .wp-block-button__link.has-blue-background-color {
+	border-color: #031E76;
+}
+
+.is-style-outline .wp-block-button__link.has-green-background-color {
+	border-color: var(--primary-color);
+}
+
+.is-style-outline .wp-block-button__link.has-purple-background-color {
+	border-color: #6D0376;
+}
+
+.is-style-outline .wp-block-button__link.has-yellow-background-color {
+	border-color: #727603;
+}
+
+.is-style-outline .wp-block-button__link.has-dark-gray-background-color {
+	border-color: var(--secondary-color);
+}
+
+.is-style-outline .wp-block-button__link.has-light-gray-background-color {
+	border-color: var(--light-gray);
+}
+
 .wp-block-button__link::after {
 	content: '';
 	background: url(../../../../assets/images/button-arrow.svg);

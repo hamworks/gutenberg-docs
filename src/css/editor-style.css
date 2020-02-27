@@ -5,6 +5,7 @@
 @import 'foundation/_elements.css';
 @import 'foundation/_alignment.css';
 @import 'foundation/_font.css';
+@import 'foundation/_colors.css';
 
 @import 'component/blocks/_blocks.css';
 @import 'component/blocks/_block-demo-with-markup.css';

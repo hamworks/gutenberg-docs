@@ -19,10 +19,10 @@ if ( ! function_exists( 'hamdocs_setup' ) ) :
 		/*
 		 * Make theme available for translation.
 		 * Translations can be filed in the /languages/ directory.
-		 * If you're building a theme based on hamworks, use a find and replace
-		 * to change 'hamworks' to the name of your theme in all the template files.
+		 * If you're building a theme based on hamdocs, use a find and replace
+		 * to change 'hamdocs' to the name of your theme in all the template files.
 		 */
-		load_theme_textdomain( 'hamworks', get_template_directory() . '/languages' );
+		load_theme_textdomain( 'hamdocs', get_template_directory() . '/languages' );
 
 		// Add default posts and comments RSS feed links to head.
 		add_theme_support( 'automatic-feed-links' );
@@ -111,24 +111,39 @@ if ( ! function_exists( 'hamdocs_setup' ) ) :
 			'editor-color-palette',
 			array(
 				array(
-					'name'  => __( 'Strong Blue', 'hamworks' ),
-					'slug'  => 'strong-blue',
-					'color' => '#0073aa',
+					'name'  => __( 'Red', 'hamdocs' ),
+					'slug'  => 'red',
+					'color' => '#760303',
 				),
 				array(
-					'name'  => __( 'Lighter Blue', 'hamworks' ),
-					'slug'  => 'lighter-blue',
-					'color' => '#229fd8',
+					'name'  => __( 'Blue', 'hamdocs' ),
+					'slug'  => 'blue',
+					'color' => '#031E76',
 				),
 				array(
-					'name'  => __( 'Very Light Gray', 'hamworks' ),
-					'slug'  => 'very-light-gray',
-					'color' => '#eee',
+					'name'  => __( 'Green', 'hamdocs' ),
+					'slug'  => 'green',
+					'color' => '#036D76',
 				),
 				array(
-					'name'  => __( 'Very Dark Gray', 'hamworks' ),
-					'slug'  => 'very-dark-gray',
-					'color' => '#444',
+					'name'  => __( 'Purple', 'hamdocs' ),
+					'slug'  => 'purple',
+					'color' => '#6D0376',
+				),
+				array(
+					'name'  => __( 'Yellow', 'hamdocs' ),
+					'slug'  => 'yellow',
+					'color' => '#727603',
+				),
+				array(
+					'name'  => __( 'Dark Gray', 'hamdocs' ),
+					'slug'  => 'dark-gray',
+					'color' => '#111',
+				),
+				array(
+					'name'  => __( 'Light Gray', 'hamdocs' ),
+					'slug'  => 'light-gray',
+					'color' => '#F7F7F7',
 				),
 			)
 		);
@@ -201,7 +216,7 @@ add_action( 'wp_enqueue_scripts', 'hamdocs_scripts' );
 
 function hamdocs_block_editor_scripts() {
 	wp_enqueue_script(
-		'hamworks-editor-script',
+		'hamdocs-editor-script',
 		get_template_directory_uri() . '/build/js/add-advanced-style.js',
 		array( 'wp-blocks' )
 	);
