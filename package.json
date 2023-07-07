@@ -39,7 +39,7 @@
         "postcss-preset-env": "^6.7.0",
         "postcss-pxtorem": "^4.0.1",
         "postcss-url": "^8.0.0",
-        "stylelint": "^13.0.0",
+        "stylelint": "^15.10.1",
         "stylelint-config-standard": "^19.0.0",
         "stylelint-config-wordpress": "^16.0.0"
     },
